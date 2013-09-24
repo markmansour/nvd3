@@ -1,4 +1,4 @@
-JS_FILES = \
+ORIG_JS_FILES = \
 	src/intro.js \
 	src/core.js \
 	src/interactiveLayer.js \
@@ -37,6 +37,18 @@ JS_FILES = \
 	src/models/stackedAreaChart.js \
 	src/outro.js
 
+JS_FILES = \
+	src/intro.js \
+	src/core.js \
+	src/interactiveLayer.js \
+	src/tooltip.js \
+	src/utils.js \
+	src/models/axis.js \
+	src/models/legend.js \
+	src/models/line.js \
+	src/models/lineChart.js \
+	src/outro.js
+
 JS_COMPILER = \
 	uglifyjs
 
@@ -54,5 +66,3 @@ nv.d3.js: Makefile
 
 clean:
 	rm -rf nv.d3.js nv.d3.min.js
-
-
